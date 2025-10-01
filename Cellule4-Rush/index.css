@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ol, ul {
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.center {
+    position: relative;
+}
+.center div {
+    position: absolute;
+    left: 37.5%;
+    top: -29px;
+    font-weight: 900;
+    font-size: 50px;
+}
+.mahdi {
+    width: 100vw;
+    height: 50vh;
+    background-color: #c3c9c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aria {
+    width: 100vw;
+    height: 50vh;
+    background-color: #798f72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.aria p {
+    margin: 0;
+    padding: 0;
+    background-color: #c3c9c1;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mahdi p {
+    margin: 0;
+    padding: 0;
+    background-color: #798f72;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aria p a {
+    text-decoration: none;
+    color: black;
+}
+.mahdi p a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    background-color: #798f72;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 150px;
+    align-items: center;
+}
+header ul li {
+    margin: 0 50px;
+    padding: 0;
+    background-color: #c3c9c1;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+header .home {
+    margin: 0 50px;
+    padding: 0;
+    background-color: #c3c9c1;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+header {
+    display: flex;
+}
+.About {
+    background-color: #c3c9c1;
+    padding: 150px 0;
+    border-bottom: 1px solid #798f72;
+}
+.About .title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 70px 0;
+}
+.About .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.About .container .description {
+    width: 700px;
+    box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-size: 20px;
+}
+.About .container .image {
+    width: 350px;
+    box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.5);
+    height: 350px;
+    border-radius: 50%;
+}
+.About .container .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.Skills {
+    background-color: #c3c9c1;
+    padding-bottom: 200px;
+    border-bottom: 1px solid #798f72;
+}
+.Skills .title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 70px 0 70px 0;
+}
+.Skills .container {
+    display: flex;
+    justify-content: center;
+}
+.Skills .container .description {
+    width: 1000px;
+    box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.5);
+}
+.Skills .container .description ul {
+    padding: 30px;
+}
+.Skills .container .description ul li {
+    padding: 10px 0;
+}
+.Skills .container .description .up {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.Skills .container .description .empty {
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100%;
+}
+.Skills .container .description .down {
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+.Skills .container .description .filled {
+    position: absolute;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+.Skills .container .description .a {
+    width: 70%;
+}
+.Skills .container .description .b {
+    width: 80%;
+} 
+.Skills .container .description .c {
+    width: 95%;
+} 
+.Skills .container .description .d {
+    width: 95%;
+} 
+.Skills .container .description .e {
+    width: 95%;
+} 
+.Skills .container .description .f {
+    width: 95%;
+} 
+.info ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.info ul li {
+    display: flex;
+}
+.contact {
+    background-color: #c3c9c1;
+    padding-bottom: 50px;
+}
+.contact .title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 50px 0;
+}
+.contact .left {
+    background-color: #798f72;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-right: 20px;
+}
+.contact .left img {
+    width: 50px;
+    margin-top: 5px;
+    
+}
+.contact .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer {
+    background-color: #798f72;
+    padding: 50px 0;
+}
+.footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.footer li {
+    background-color: #c3c9c1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0px 10px;
+}
+.footer li img {
+    width: 30px;
+    margin-top: 4px;
+    
+}
+.footer div {
+    text-align: center;
+}
+.aria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mahdi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #798f72, #c3c9c1);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}

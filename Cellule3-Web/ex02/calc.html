@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input id="a" type="text" placeholder="first number">
+        <label for="operation">operations</label>
+        <select id="op" name="operation" id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input id="b" type="text" placeholder="second number">
+        <input type="submit" value="try me" onclick="myFunction()">
+    </form>
+    <script>
+        setInterval(() => {alert("Please, use me...")}, 30000);
+
+        function myFunction() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let result_a = parseInt(a, 10);
+            let result_b = parseInt(b, 10);
+            
+            if (document.getElementById("op").value == "+") {
+                if (result_a >= 0 && result_b >= 0) {
+                    console.log(result_a + result_b);
+                    alert(result_a + result_b);
+                } else {
+                    alert("Error :(");
+                }    
+            } else if (document.getElementById("op").value == "-") {
+                if (result_a >= 0 && result_b >= 0) {
+                    console.log(result_a - result_b);
+                    alert(result_a - result_b);
+                } else {
+                    alert("Error :(");
+                }
+            } else if (document.getElementById("op").value == "*") {
+                if (result_a >= 0 && result_b >= 0) {
+                    console.log(result_a * result_b);
+                    alert(result_a * result_b);
+                } else {
+                    alert("Error :(");
+                }
+            } else if (document.getElementById("op").value == "/") {
+                if (result_a >= 0 && result_b > 0) {
+                    console.log(result_a / result_b);
+                    alert(result_a / result_b);
+                } else if (result_b == 0) {
+                    console.log("It’s over 9000!");
+                    alert("It’s over 9000!");
+                } else {
+                    alert("Error :(");
+                }
+            } else if (document.getElementById("op").value == "%") {
+                if (result_a >= 0 && result_b > 0) {
+                    console.log(result_a % result_b);
+                    alert(result_a % result_b);
+                } else if (result_b == 0) {
+                    console.log("It’s over 9000!");
+                    alert("It’s over 9000!");
+                } else {
+                    alert("Error :(");
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

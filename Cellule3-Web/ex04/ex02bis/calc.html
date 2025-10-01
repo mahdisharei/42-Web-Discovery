@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>It's over 9000 (jQuery)</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form id="form">
+    <input id="a" type="number" min="0" step="1" placeholder="first number" required>
+    <label for="op">operations</label>
+    <select id="op" name="operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input id="b" type="number" min="0" step="1" placeholder="second number" required>
+    <input type="submit" value="Try me!">
+  </form>
+
+  <script>
+    setInterval(() => alert("Please, use me..."), 30000);
+
+    $(document).ready(function() {
+      $("#form").on("submit", function(e) {
+        e.preventDefault();
+
+        let a = $("#a").val().trim();
+        let b = $("#b").val().trim();
+        let op = $("#op").val();
+
+        let numA = Number(a);
+        let numB = Number(b);
+
+        if (!Number.isInteger(numA) || !Number.isInteger(numB) || numA < 0 || numB < 0) {
+          alert("Error :(");
+          return;
+        }
+
+        if ((op === "/" || op === "%") && numB === 0) {
+          console.log("It’s over 9000!");
+          alert("It’s over 9000!");
+          return;
+        }
+
+        let res;
+        switch(op) {
+          case "+": res = numA + numB; break;
+          case "-": res = numA - numB; break;
+          case "*": res = numA * numB; break;
+          case "/": res = numA / numB; break;
+          case "%": res = numA % numB; break;
+        }
+
+        console.log(res);
+        alert(res);
+      });
+    });
+  </script>
+</body>
+</html>

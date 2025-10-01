@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 300px;
+}
+.profilePic {
+    width: 100%;
+}
+.login {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.box {
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}   
+.trasparent {
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
+.logo {
+    width: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.black {
+    height: 30px;
+    background-color: black;
+}
+button {
+    text-align: center;
+    color: white;
+    /* text-decoration: none; */
+    background-color: black;
+    border-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}

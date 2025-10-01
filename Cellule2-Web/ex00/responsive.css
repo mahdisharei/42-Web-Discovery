@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 5px;
+    height: 100vh;
+}
+.cell {
+    border: 1px solid black;
+    padding-top: 170px;
+    font-size: xx-large;
+}
+.color1 {
+    background-color: aqua;
+}
+.color2 {
+    background-color: aquamarine;
+}

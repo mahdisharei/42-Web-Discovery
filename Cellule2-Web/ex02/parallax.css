@@ -1,0 +1,45 @@
+body, html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.parallax1 {
+    background-image:url(./img/1.jpg);
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.parallax1 div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+.parallax2 {
+    background-image:url(./img/2.jpg);
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.parallax2 div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+.blackBlock {
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+.blackBlock div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    color: white;
+}

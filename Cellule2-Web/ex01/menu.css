@@ -1,0 +1,15 @@
+label {
+    display: block;
+    text-decoration: solid;
+    text-transform: uppercase;
+    text-align: justify;
+}
+select {
+    background-color: antiquewhite;
+    height: 30px;
+    border: 2px wheat solid;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+}
