@@ -1,3 +1,4 @@
+![Made with 42](https://img.shields.io/badge/42-Network-blue)
 # 42 Web Discovery Piscine – Florence
 
 This repository contains the exercises and group projects I completed during the **42 Web Discovery Piscine** at 42 Florence.  
